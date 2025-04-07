@@ -1,6 +1,6 @@
-# TailwindCSS
-Tailwind CSS Guide line with coding
-#CDN Set up
+# TailwindC CSS
+# Tailwind CSS Guideline with coding
+# CDN Setup
 <!DOCTYPE html>
 <html lang="en">
 <head>
