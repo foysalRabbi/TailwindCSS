@@ -11,9 +11,4 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
-<body>
-    <h1 class="text-3xl font-bold bg-red-500 text-white p-8">
-      Hello world!
-    </h1>
-</body>
-</html>
+
