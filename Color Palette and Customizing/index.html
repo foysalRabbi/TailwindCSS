@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette and Customizing</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: "#1DA1F2",
+                secondary: "#14171A",
+                "tertiary-color": "#1DA1F2"
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="m-5">
+    <button class="bg-green-500 text-white px-4 py-2 rounded-md font-semibold hover:bg-indigo-500 mb-5">Default Green Button</button>
+
+    <!-- apply own custom color -->
+     <div class="bg-primary">Custom Primary Color</div>
+     <div class="bg-secondary text-primary">Custom Secondary Color</div>
+     <div class="text-tertiary-color">Tertiary Color</div>
+</body>
+</html>

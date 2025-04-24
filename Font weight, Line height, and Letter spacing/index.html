@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controlling font family, font weight, line height, and letter spacing</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              fontFamily: {
+                roboto: ["Roboto", "sans-serif"],
+                poppins: ["Poppins", "sans-serif"]
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body>
+    <h1 class="text-2xl font-poppins font-bold">Controlling font family, font weight, line height, and letter spacing</h1>
+    <p class="font-roboto leading-relaxed tracking-wider">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, fuga aut harum facilis cumque quo libero rem dolore voluptatum magni laudantium sit veritatis nihil nemo consequuntur delectus quidem aspernatur magnam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel architecto hic tempore laboriosam ex officiis, deserunt enim, maiores vitae quos beatae totam dolorem obcaecati cupiditate quidem omnis sed inventore exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos asperiores excepturi, nemo fugit, iste blanditiis omnis eius pariatur dignissimos placeat atque cum deleniti quod laborum aliquam sequi aut enim repellendus.lor Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, excepturi. Aliquid, fugit dolor atque ea neque non unde perspiciatis. Consectetur repellat, blanditiis aut dolore quia velit numquam a aliquid officia.</p>
+</body>
+</html>

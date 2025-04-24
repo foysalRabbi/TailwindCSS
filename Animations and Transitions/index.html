@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations and Transitions</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            keyframes: {
+              fadeIn: {
+                "0%": { opacity: "0" },
+                "100%": { opacity: "100" },
+              },
+            },
+            animation: {
+              "fadeIn": "fadeIn 2s ease-in-out",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="m-5 space-y-5">
+    <!-- adding transitions -->
+    <button
+      class="bg-blue-500 text-white px-8 py-2 rounded hover:bg-blue-700 transition-all duration-200 ease-in-out"
+    >
+      Hover Me
+    </button>
+
+    <!-- Built-in Animation Utilities -->
+    <div class="flex gap-8 items-center">
+      <!-- spinning loader -->
+      <div
+        class="h-10 w-10 border-4 rounded-full border-blue-700 border-t-transparent animate-spin"
+      ></div>
+
+      <!-- bouncing icon -->
+      <div class="text-4xl text-green-500 animate-bounce">⬆️</div>
+    </div>
+
+    <!-- custom animation -->
+    <div class="p-4 bg-yellow-300 text-black rounded animate-fadeIn">
+      Custom Fade-In Animation
+    </div>
+  </body>
+</html>
